@@ -2,25 +2,21 @@ import useTheme from "@/hooks/useTheme";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function Index() {
-  const {toggleDarkMode} = useTheme();
+  const { toggleDarkMode } = useTheme();
   return (
-    <View
-      style={styles.container}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View style={styles.container}>
+      <Text>Hello world</Text>
       <TouchableOpacity onPress={toggleDarkMode}>
-        <Text>
-          toggle the mode
-        </Text>
-        </TouchableOpacity>
+        <Text>toggle the mode</Text>
+      </TouchableOpacity>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-      }
-})
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});
