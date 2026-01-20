@@ -1,10 +1,10 @@
-import useTheme from "@/hooks/useTheme"
-import { Ionicons } from "@expo/vector-icons"
-import { Tabs } from 'expo-router'
-import React from 'react'
+import useTheme from "@/hooks/useTheme";
+import { Ionicons } from "@expo/vector-icons";
+import { Tabs } from "expo-router";
+import React from "react";
 
 const TabsLayout = () => {
-  const {colors} = useTheme();
+  const { colors } = useTheme();
 
   return (
     <Tabs
@@ -17,11 +17,11 @@ const TabsLayout = () => {
           borderTopColor: colors.border,
           height: 90,
           paddingBottom: 24,
-          paddingTop: 12
+          paddingTop: 12,
         },
         tabBarLabelStyle: {
           fontSize: 12,
-          fontWeight: 600
+          fontWeight: 600,
         },
         headerShown: false,
       }}
@@ -29,23 +29,23 @@ const TabsLayout = () => {
       <Tabs.Screen
         name="index"
         options={{
-          title:"Todos",
-          tabBarIcon: ({color, size}) => (
-            <Ionicons name='flash' size={size} color={color} />
-          )
+          title: "Todos",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="flash" size={size} color={color} />
+          ),
         }}
       />
       <Tabs.Screen
         name="settings"
         options={{
-          title:"Settings",
-          tabBarIcon: ({color, size}) => (
-            <Ionicons name='settings' size={size} color={color} />
-          )
+          title: "Settings",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="settings" size={size} color={color} />
+          ),
         }}
       />
     </Tabs>
-  )
-}
+  );
+};
 
-export default TabsLayout
+export default TabsLayout;
