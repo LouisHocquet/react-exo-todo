@@ -156,6 +156,7 @@ export const createHomeStyles = (colors: ColorScheme) => {
     },
     todoTextContainer: {
       flex: 1,
+      paddingLeft: 8,
     },
     todoText: {
       fontSize: 17,
